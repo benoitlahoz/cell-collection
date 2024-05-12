@@ -1,6 +1,15 @@
 {
   "name": "cell-collection",
   "version": "1.0.0",
+  "description": "A collection of 2D or 3D 'cells' built on top of Javascript Array to help multidimensional array handling.",
+  "license": "MIT",
+  "keywords": [
+    "collection",
+    "array",
+    "multidimensional",
+    "cell",
+    "selection"
+  ],
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",

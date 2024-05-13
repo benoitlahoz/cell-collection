@@ -59,16 +59,18 @@ export class CellCollection implements AbstractCellCollection {
   constructor(
     array: Array<Array<AbstractCell>> | Array<Array<Array<AbstractCell>>> = [[]]
   ) {
-    const is2dArray = (array: Array<any>) =>
-      array.every((item: any) => Array.isArray(item));
-    const is3dArray = (array: Array<any>) =>
-      array.every((item: any) => is2dArray(item));
+    try {
+      const is2dArray = (array: Array<any>) =>
+        array.every((item: any) => Array.isArray(item));
+      const is3dArray = (array: Array<any>) =>
+        array.every((item: any) => is2dArray(item));
 
-    if (is3dArray(array)) {
-      this._cells = array.flat(3);
-    } else if (is2dArray(array)) {
-      this._cells = array.flat(2);
-    } else {
+      if (is3dArray(array)) {
+        this._cells = array.flat(3);
+      } else if (is2dArray(array)) {
+        this._cells = array.flat(2);
+      }
+    } catch (_: unknown) {
       throw new Error(
         'Array of `AbstractCell` must be at least 2-dimensional.'
       );
@@ -205,7 +207,29 @@ export class CellCollection implements AbstractCellCollection {
         };
       }
     } else if (args.length === 2) {
-      if (
+      if (args[0] instanceof AbstractCell && args[1] instanceof AbstractCell) {
+        // Cells
+
+        const begin = args[0].index as CellIndex;
+        const end = args[1].index as CellIndex;
+
+        actualRange.index = {
+          row: Math.min(begin.row, end.row),
+          col: Math.min(begin.col, end.col),
+          tube:
+            typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
+              ? Math.min(begin.tube, end.tube)
+              : 0,
+        };
+        actualRange.size = {
+          width: Math.max(begin.row, end.row) - actualRange.index.row + 1,
+          height: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          depth:
+            typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
+              ? Math.max(begin.tube, end.tube) - actualRange.index.tube! + 1
+              : 1,
+        };
+      } else if (
         typeof (args[0] as any).row !== 'undefined' &&
         typeof (args[1] as any).row !== 'undefined'
       ) {
@@ -246,31 +270,6 @@ export class CellCollection implements AbstractCellCollection {
         actualRange.size = {
           depth: 1,
           ...size,
-        };
-      } else if (
-        args[0] instanceof AbstractCell &&
-        args[1] instanceof AbstractCell
-      ) {
-        // Cells
-
-        const begin = args[0].index as CellIndex;
-        const end = args[1].index as CellIndex;
-
-        actualRange.index = {
-          row: Math.min(begin.row, end.row),
-          col: Math.min(begin.col, end.col),
-          tube:
-            typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
-              ? Math.min(begin.tube, end.tube)
-              : 0,
-        };
-        actualRange.size = {
-          width: Math.max(begin.row, end.row) - actualRange.index.row + 1,
-          height: Math.max(begin.col, end.col) - actualRange.index.col + 1,
-          depth:
-            typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
-              ? Math.max(begin.tube, end.tube) - actualRange.index.tube! + 1
-              : 1,
         };
       }
     }
@@ -325,23 +324,42 @@ export class CellCollection implements AbstractCellCollection {
     );
   }
 
-  public sort(): CellCollection {
-    if (
+  public shuffle(): CellCollection {
+    const arr = this.toArray()
+      .map((cell: AbstractCell) => ({ cell, sortKey: Math.random() }))
+      .sort((a: any, b: any) => a.sortKey - b.sortKey)
+      .map(({ cell }) => cell);
+
+    return CellCollection.fromArray(arr);
+  }
+
+  public sort(
+    compareFn?: (a: AbstractCell, b: AbstractCell) => number
+  ): CellCollection {
+    if (compareFn) {
+      const arr = this._cells.sort(compareFn);
+      return CellCollection.fromArray(arr);
+    } else if (
       !this._cache[CellCollectionCacheKey.Sorted] ||
       !this._cache[CellCollectionCacheKey.Sorted].every((cell: AbstractCell) =>
         this._cells.includes(cell)
       )
     ) {
       const arr = [...this._cells];
-      arr.sort((a: AbstractCell, b: AbstractCell) => {
+      arr.sort(((a: AbstractCell, b: AbstractCell) => {
+        if (a.row === b.row && a.col === b.col && a.tube === b.tube) {
+          throw new Error(
+            `Two cells can't be at the same position (${a.row}, ${a.col}, ${a.tube})`
+          );
+        }
+
         if (a.row <= b.row && a.col <= b.col && a.tube <= b.tube) {
           return -1;
         }
         if (a.row > b.row || a.col > b.col || a.tube > b.tube) {
           return 1;
         }
-        return 0;
-      });
+      }) as any);
       this._cache[CellCollectionCacheKey.Sorted] =
         CellCollection.fromArray(arr);
     }
@@ -356,15 +374,20 @@ export class CellCollection implements AbstractCellCollection {
       )
     ) {
       const arr = [...this._cells];
-      arr.sort((a: AbstractCell, b: AbstractCell) => {
+      arr.sort(((a: AbstractCell, b: AbstractCell) => {
+        if (a.row === b.row && a.col === b.col && a.tube === b.tube) {
+          throw new Error(
+            `Two cells can't be at the same position (${a.row}, ${a.col}, ${a.tube})`
+          );
+        }
+
         if (a.row >= b.row && a.col >= b.col && a.tube >= b.tube) {
           return -1;
         }
         if (a.row < b.row || a.col < b.col || a.tube < b.tube) {
           return 1;
         }
-        return 0;
-      });
+      }) as any);
       this._cache[CellCollectionCacheKey.SortedReverse] =
         CellCollection.fromArray(arr);
     }
@@ -385,6 +408,12 @@ export class CellCollection implements AbstractCellCollection {
 
   public forEach(callback: CellCollectionCallback): void {
     this._cells.forEach((cell: AbstractCell, index: number) =>
+      callback(cell, index, this)
+    );
+  }
+
+  public map(callback: CellCollectionCallback): Array<any> {
+    return this._cells.map((cell: AbstractCell, index: number) =>
       callback(cell, index, this)
     );
   }
@@ -425,13 +454,7 @@ export class CellCollection implements AbstractCellCollection {
     return this.at(from.row, from.col, from.tube - 1);
   }
 
-  public filter(
-    callback: (
-      cell: AbstractCell,
-      index: number,
-      collection: CellCollection
-    ) => void
-  ): CellCollection {
+  public filter(callback: CellCollectionCallback): CellCollection {
     return CellCollection.fromArray(
       this._cells.filter((cell: AbstractCell, index: number) =>
         callback(cell, index, this)
@@ -467,6 +490,10 @@ export class CellCollection implements AbstractCellCollection {
 
   public values(): IterableIterator<AbstractCell> {
     return this._cells.values();
+  }
+
+  public keys(): IterableIterator<number> {
+    return this._cells.keys();
   }
 
   public toArray(): Array<AbstractCell> {
@@ -507,12 +534,11 @@ export class CellCollection implements AbstractCellCollection {
 
       return CellCollection.fromArray(selected);
     } else if (args[0] instanceof AbstractCell && this.has(args[0])) {
-      // Reset cache.
-
       return args[0].select();
     } else if (typeof (args[0] as any).row !== 'undefined') {
       const arg: CellIndex = args[0] as CellIndex;
       const cell = this.at(arg.row, arg.col, arg.tube || 0);
+
       if (cell) {
         return cell.select();
       }
@@ -630,7 +656,7 @@ export class CellCollection implements AbstractCellCollection {
   }
 
   public blur(): AbstractCell | undefined;
-  public blur(cell: AbstractCell): AbstractCell;
+  public blur(cell?: AbstractCell): AbstractCell;
   public blur(
     row: number,
     col: number,

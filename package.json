@@ -1,6 +1,6 @@
 {
   "name": "cell-collection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of 2D or 3D 'cells' built on top of Javascript Array to help multidimensional array handling.",
   "license": "MIT",
   "keywords": [
@@ -10,7 +10,6 @@
     "cell",
     "selection"
   ],
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/benoitlahoz/cell-collection/tree/main"
@@ -25,10 +24,12 @@
   "exports": {
     ".": {
       "import": "./dist/cell-collection.core.js",
+      "require": "./dist/cell-collection.core.js",
       "types": "./dist/core.d.ts"
     },
     "./dom": {
       "import": "./dist/cell-collection.dom.js",
+      "require": "./dist/cell-collection.dom.js",
       "types": "./dist/dom.d.ts"
     }
   },

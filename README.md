@@ -1,3 +1,3 @@
 # cell-collection
 
-![Statements](https://img.shields.io/badge/statements-25.51%25-red.svg?style=flat) ![Branches](https://img.shields.io/badge/branches-4.47%25-red.svg?style=flat) ![Functions](https://img.shields.io/badge/functions-35.2%25-red.svg?style=flat) ![Lines](https://img.shields.io/badge/lines-26.27%25-red.svg?style=flat)
+![Statements](https://img.shields.io/badge/statements-100%25-brightgreen.svg?style=flat) ![Branches](https://img.shields.io/badge/branches-86.55%25-yellow.svg?style=flat) ![Functions](https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat) ![Lines](https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat)

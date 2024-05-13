@@ -1,9 +1,9 @@
 import { describe, expect, test } from 'vitest';
-import { HTMLCell } from './html-cell.module';
+import { HTMLCell } from '../dom/html-cell.module';
 import { CellCollection } from './cell-collection.module';
 import { JSDOM } from 'jsdom';
-import { AbstractCellCollection } from './abstract/cell-collection.abstract';
-import { AbstractCell } from './abstract/cell.abstract';
+import { AbstractCellCollection } from '../abstract/cell-collection.abstract';
+import { AbstractCell } from '../abstract/cell.abstract';
 
 const dom = new JSDOM();
 global.document = dom.window.document;

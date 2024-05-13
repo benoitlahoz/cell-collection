@@ -4,7 +4,7 @@ import {
   CellIndex,
   CellRange,
   CellSize,
-} from './abstract/cell.abstract';
+} from '../abstract/cell.abstract';
 
 export class Cell implements AbstractCell {
   public userData: any | undefined;

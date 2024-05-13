@@ -1,6 +1,6 @@
 {
   "name": "cell-collection",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A collection of 2D or 3D 'cells' built on top of Javascript Array to help multidimensional array handling.",
   "license": "MIT",
   "keywords": [
@@ -11,17 +11,46 @@
     "selection"
   ],
   "type": "module",
-  "scripts": {
-    "build": "tsc && vite build",
-    "test": "vitest",
-    "coverage": "vitest run --coverage && istanbul-badges-readme"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benoitlahoz/cell-collection/tree/main"
   },
+  "bugs": {
+    "url": "https://github.com/benoitlahoz/cell-collection/issues"
+  },
+  "homepage": "https://github.com/benoitlahoz/cell-collection/tree/main/#README",
+  "main": "./dist/cell-collection.core.js",
+  "module": "./dist/cell-collection.core.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/cell-collection.core.js",
+      "types": "./dist/core.d.ts"
+    },
+    "./dom": {
+      "import": "./dist/cell-collection.dom.js",
+      "types": "./dist/dom.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build --config=vite.config.core.mts && vite build --config=vite.config.dom.mts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage && istanbul-badges-readme",
+    "dev:pack": "npm pack --pack-destination ./packages"
+  },
+  "files": [
+    "dist/**/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/jsdom": "^21.1.6",
     "@types/node": "^20.12.11",
     "@vitest/coverage-istanbul": "^1.6.0",
     "istanbul-badges-readme": "^1.9.0",
     "jsdom": "^24.0.0",
+    "terser": "^5.31.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.1",

@@ -4,7 +4,7 @@ import {
   CellIndex,
   CellRange,
   CellSize,
-} from './abstract/cell.abstract';
+} from '../abstract/cell.abstract';
 
 export interface HTMLCellOptions {
   selectedSelector: string;

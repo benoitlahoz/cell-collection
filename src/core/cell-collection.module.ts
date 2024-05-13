@@ -1,14 +1,14 @@
 import {
   AbstractCellCollection,
   CellCollectionCallback,
-} from './abstract/cell-collection.abstract';
+} from '../abstract/cell-collection.abstract';
 import {
   AbstractCell,
   CellBounds,
   CellIndex,
   CellRange,
   CellSize,
-} from './abstract/cell.abstract';
+} from '../abstract/cell.abstract';
 
 export enum CellCollectionCacheKey {
   Sorted = 'sorted',
@@ -17,7 +17,7 @@ export enum CellCollectionCacheKey {
 
 export class CellCollection implements AbstractCellCollection {
   /**
-   * Creates a new `CellCollection` from an `Array` of `AbstractCell`.
+   * Creates a new `CellCollection` from a 1D `Array` of `AbstractCell`.
    *
    * @param { Array<AbstractCell> } cells The cells to create the `CellCollection` from.
    *

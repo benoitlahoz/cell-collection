@@ -1,4 +1,4 @@
-import { CellCollection } from '../cell-collection.module';
+import { CellCollection } from '../core/cell-collection.module';
 import {
   AbstractCell,
   CellBounds,

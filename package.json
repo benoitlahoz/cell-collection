@@ -1,6 +1,6 @@
 {
   "name": "cell-collection",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A collection of 2D or 3D 'cells' built on top of Javascript Array to help multidimensional array handling.",
   "license": "MIT",
   "keywords": [

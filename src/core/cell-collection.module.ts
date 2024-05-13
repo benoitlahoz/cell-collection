@@ -222,8 +222,8 @@ export class CellCollection implements AbstractCellCollection {
               : 0,
         };
         actualRange.size = {
-          width: Math.max(begin.row, end.row) - actualRange.index.row + 1,
-          height: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          width: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          height: Math.max(begin.row, end.row) - actualRange.index.row + 1,
           depth:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
               ? Math.max(begin.tube, end.tube) - actualRange.index.tube! + 1

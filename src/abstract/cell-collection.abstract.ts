@@ -1,3 +1,4 @@
+import { CellCollection } from '../cell-collection.module';
 import {
   AbstractCell,
   CellBounds,
@@ -22,7 +23,7 @@ export type CellCollectionCallback = (
    * The collection being traversed.
    */
   collection: AbstractCellCollection
-) => void;
+) => any;
 
 export abstract class AbstractCellCollection {
   /**
@@ -213,11 +214,22 @@ export abstract class AbstractCellCollection {
   ): AbstractCell | undefined;
 
   /**
-   * Sort the cells by row, column and tube ascending.
+   * Shuffle the cells.
    *
+   * @returns { CellCollection } A new collection with shuffled cells.
+   */
+  public abstract shuffle(): CellCollection;
+
+  /**
+   * If a comparison function is provided, sort the cells with it,
+   * otherwise sort the cells by row, column and tube ascending.
+   *
+   * @param { (a: AbstractCell, b: AbstractCell) => number | undefined } compareFn A comparison function to sort the collection.
    * @returns { AbstractCellCollection } A new sorted collection.
    */
-  public abstract sort(): AbstractCellCollection;
+  public abstract sort(
+    compareFn?: (a: AbstractCell, b: AbstractCell) => number
+  ): AbstractCellCollection;
 
   /**
    * Sort the cells by row, column and tube descending.
@@ -249,6 +261,13 @@ export abstract class AbstractCellCollection {
    */
   public abstract forEach(callback: CellCollectionCallback): void;
 
+  /**
+   * Return an `Array` populated with the result of calling provided function to each cell.
+   *
+   * @param { CellCollectionCallback } callback The function to apply to each cell of this collection.
+   * @returns { Array<any> } An array resulting of the function.
+   */
+  public abstract map(callback: CellCollectionCallback): Array<any>;
   /**
    * Try to find a cell given a test function.
    *
@@ -365,6 +384,13 @@ export abstract class AbstractCellCollection {
    * @returns { IterableIterator<AbstractCell> } An iterrator on the collection's values.
    */
   public abstract values(): IterableIterator<AbstractCell>;
+
+  /**
+   * Get the collection keys.
+   *
+   * @returns { IterableIterator<number> } An iterrator on the collection's keys.
+   */
+  public abstract keys(): IterableIterator<number>;
 
   /**
    * Get the collection as a unidimensional `Array` of cells.
@@ -506,7 +532,7 @@ export abstract class AbstractCellCollection {
    * @param { AbstractCell } cell The cell to blur.
    * @returns { AbstractCell } The passed cell.
    */
-  public abstract blur(cell: AbstractCell): AbstractCell;
+  public abstract blur(cell?: AbstractCell): AbstractCell;
   /**
    * Blur a cell at given position.
    *
@@ -530,4 +556,18 @@ export abstract class AbstractCellCollection {
   public abstract blur(
     ...args: (AbstractCell | number | CellIndex | undefined)[]
   ): AbstractCell | AbstractCellCollection | undefined;
+
+  /**
+   * Allows iterating over cells with 'for... of...' loop.
+   *
+   * @returns { AbstractCell } A cell object.
+   *
+   * @example
+   * // Iterate over cells.
+   *
+   * for (const cell of myCellCollection) {
+   *   console.log(cell)
+   * }
+   */
+  public abstract [Symbol.iterator](): any;
 }

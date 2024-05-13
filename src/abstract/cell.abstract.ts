@@ -162,4 +162,32 @@ export abstract class AbstractCell {
    * User data associated to this cell.
    */
   public abstract userData: any | undefined;
+
+  /**
+   * Overrides 'instanceof' behavior.
+   */
+  public static [Symbol.hasInstance](
+    instance: unknown
+  ): instance is AbstractCell {
+    if (instance === null || typeof instance !== 'object') return false;
+
+    const inst = instance as any;
+
+    const row: any = inst.row;
+    const col: any = inst.col;
+
+    const select: unknown = inst.select;
+    const unselect: unknown = inst.unselect;
+    const focus: unknown = inst.focus;
+    const blur: unknown = inst.blur;
+
+    return (
+      typeof row === 'number' &&
+      typeof col === 'number' &&
+      typeof select === 'function' &&
+      typeof unselect === 'function' &&
+      typeof focus === 'function' &&
+      typeof blur === 'function'
+    );
+  }
 }

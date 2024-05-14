@@ -348,9 +348,7 @@ export class CellCollection implements AbstractCellCollection {
       const arr = [...this._cells];
       arr.sort(((a: AbstractCell, b: AbstractCell) => {
         if (a.row === b.row && a.col === b.col && a.tube === b.tube) {
-          throw new Error(
-            `Two cells can't be at the same position (${a.row}, ${a.col}, ${a.tube})`
-          );
+          return 0;
         }
 
         if (a.row <= b.row && a.col <= b.col && a.tube <= b.tube) {
@@ -376,9 +374,7 @@ export class CellCollection implements AbstractCellCollection {
       const arr = [...this._cells];
       arr.sort(((a: AbstractCell, b: AbstractCell) => {
         if (a.row === b.row && a.col === b.col && a.tube === b.tube) {
-          throw new Error(
-            `Two cells can't be at the same position (${a.row}, ${a.col}, ${a.tube})`
-          );
+          return 0;
         }
 
         if (a.row >= b.row && a.col >= b.col && a.tube >= b.tube) {
@@ -502,6 +498,28 @@ export class CellCollection implements AbstractCellCollection {
 
   public toSet(): Set<AbstractCell> {
     return new Set([...this._cells]);
+  }
+
+  public concat(collection: CellCollection): CellCollection {
+    return CellCollection.fromArray([...this, ...collection]);
+  }
+
+  public intersection(collection: CellCollection): CellCollection {
+    const set = new Set(collection);
+    const intersection = [...new Set(this._cells)].filter(
+      (item: AbstractCell) => set.has(item)
+    );
+    return CellCollection.fromArray(intersection);
+  }
+
+  public difference(collection: CellCollection): CellCollection {
+    return this.filter((cell: AbstractCell) => !collection.has(cell));
+  }
+
+  public xor(collection: CellCollection): CellCollection {
+    return this.filter((cell: AbstractCell) => !collection.has(cell)).concat(
+      collection.filter((cell: AbstractCell) => !this.has(cell))
+    );
   }
 
   /**

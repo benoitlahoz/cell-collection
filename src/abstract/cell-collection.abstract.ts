@@ -407,6 +407,43 @@ export abstract class AbstractCellCollection {
   public abstract toSet(): Set<AbstractCell>;
 
   /**
+   * Concatenate (union) two collections and return a new collection.
+   *
+   * @param { AbstractCellCollection } collection The collection to add to this one.
+   * @returns { AbstractCellCollection } A new collection with cells from both.
+   */
+  public abstract concat(collection: CellCollection): CellCollection;
+
+  /**
+   * Computes intersection between two collections.
+   *
+   * @param { AbstractCellCollection } collection The collection to compute intersection with.
+   * @returns { AbstractCellCollection } A new cell collection with intersection of this collection and the provided one
+   * (cells that are present in both collections).
+   */
+  public abstract intersection(
+    collection: AbstractCellCollection
+  ): AbstractCellCollection;
+
+  /**
+   * Computes the difference between two collections and return a new collection.
+   *
+   * @param { AbstractCellCollection } collection The collection to compute difference with this one.
+   * @returns { AbstractCellCollection } A new collection with difference (cells of `collection`
+   * that are only present in this collection).
+   */
+  public abstract difference(collection: CellCollection): CellCollection;
+
+  /**
+   * Computes the symmetric difference (exclusive or) between two collections.
+   *
+   * @param { AbstractCellCollection } collection The collection to compute symmetric difference with this one.
+   * @returns { AbstractCellCollection } A new collection with symmetric difference (cells of `collection`
+   * that are not present in this collection, and cells of this collection that are not present in `collection`).
+   */
+  public abstract xor(collection: CellCollection): CellCollection;
+
+  /**
    * Mark all cells of this collection as selected.
    *
    * @returns { AbstractCellCollection } A new collection as selection.

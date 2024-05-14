@@ -58,10 +58,17 @@ for (let row = 0; row < SIZE; row++) {
 }
 
 describe('CellCollection', () => {
-  test('collection should be initialized with at least a two dimensions array', () => {
+  test('collection should be initialized with valid array between 1 and 3 dimensions', () => {
     // @ts-ignore
     expect(() => new CellCollection(['not-a-cell'])).toThrowError();
-    expect(new CellCollection(cells[0])).toBeInstanceOf(CellCollection);
+
+    // Only tubes on col 0 and row 0.
+    const oneD = new CellCollection(cells[0][0]);
+    expect(oneD).toBeInstanceOf(CellCollection);
+
+    // Only cols and tubes on row 0.
+    const twoD = new CellCollection(cells[0]);
+    expect(twoD).toBeInstanceOf(CellCollection);
   });
 
   const collection = new CellCollection(cells);

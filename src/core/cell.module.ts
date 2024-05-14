@@ -59,7 +59,7 @@ export class Cell implements AbstractCell {
   }
 
   public get col(): number {
-    return this._range.index.col;
+    return this._range.index.col || 0;
   }
 
   public get tube(): number {
@@ -71,7 +71,7 @@ export class Cell implements AbstractCell {
   }
 
   public get height(): number {
-    return this._range.size.height;
+    return this._range.size.height || 1;
   }
 
   public get depth(): number {

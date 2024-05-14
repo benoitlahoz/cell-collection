@@ -9,22 +9,20 @@ import {
 
 /**
  * An user callback passed to collection loop methods (e.g. `every`, `some`, ...).
+ *
+ * @property cell The current cell in the loop.
+ * @property index The index of the current cell in the loop.
+ * @property collection The collection being traversed.
  */
 export type CellCollectionCallback = (
-  /**
-   * The current cell in the loop.
-   */
   cell: AbstractCell,
-  /**
-   * The index of the current cell in the loop.
-   */
   index: number,
-  /**
-   * The collection being traversed.
-   */
   collection: AbstractCellCollection
 ) => any;
 
+/**
+ * An abstract class that defines a model for implementing `CellCollection`.
+ */
 export abstract class AbstractCellCollection {
   /**
    * The number of cells in the collection.
@@ -35,7 +33,7 @@ export abstract class AbstractCellCollection {
    */
   public abstract firstCell: AbstractCell | undefined;
   /**
-   * The last cell of the collection, at the end index for row, column and tube.
+   * The last cell of the collection, at the end position for row, column and tube.
    */
   public abstract lastCell: AbstractCell | undefined;
   /**
@@ -68,6 +66,11 @@ export abstract class AbstractCellCollection {
   public abstract bounds: CellBounds;
   /**
    * A new cells collection from the selected cells of this collection.
+   *
+   * @example
+   * // ...
+   * const cell = collection.select(0, 0, 0);
+   * console.log(collection.selected.length) // 1
    */
   public abstract selected: AbstractCellCollection;
   /**
@@ -79,7 +82,7 @@ export abstract class AbstractCellCollection {
    */
   public abstract elements?: Array<Element | undefined>;
   /**
-   * An array of collections with 'lands' of this collection's selection.
+   * An array of collections with 'lands' of contiguous selecteed cells of this collection.
    */
   public abstract selectionLands?: Array<AbstractCellCollection>;
 
@@ -191,7 +194,7 @@ export abstract class AbstractCellCollection {
   /**
    * Returns `true` if this collection has a cell at given index.
    *
-   * @param { CellIndex } index The index to test.
+   * @param { CellIndex } index The index to test.
    * @returns { boolean } `true` if this collection contains a cell at given index.
    */
   public abstract has(index: CellIndex): boolean;
@@ -203,13 +206,13 @@ export abstract class AbstractCellCollection {
    * Returns the cell at given position.
    *
    * @param { number } row The row number of the cell.
-   * @param { number } col The column number of the cell.
+   * @param { number | undefined } col The column number of the cell.
    * @param { number | undefined } tube The tube number of the cell.
    * @returns { AbstractCell | undefined } The cell at given position or `undefined` if it does not exist.
    */
   public abstract at(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
 
@@ -462,13 +465,13 @@ export abstract class AbstractCellCollection {
    * Mark the cell at given position as selected.
    *
    * @param { number } row The row of the cell to select.
-   * @param { number } col The column of the cell to select.
-   * @param { number } tube The tube of the cell to select.
+   * @param { number | undefined } col The column of the cell to select.
+   * @param { number | undefined } tube The tube of the cell to select.
    * @returns { AbstractCell | undefined } The selected cell or `undefined` if it was not found.
    */
   public abstract select(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   /**
@@ -499,13 +502,13 @@ export abstract class AbstractCellCollection {
    * Mark a cell at given position as unselected.
    *
    * @param { number } row The row of the cell to unselect.
-   * @param { number } col The column of the cell to unselect.
-   * @param { number } tube The tube of the cell to unselect.
+   * @param { number | undefined } col The column of the cell to unselect.
+   * @param { number | undefined } tube The tube of the cell to unselect.
    * @returns { AbstractCell } The unselected cell or undefined if it was not found.
    */
   public abstract unselect(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   /**
@@ -537,13 +540,13 @@ export abstract class AbstractCellCollection {
    * Mark a cell as focused and all other cells as blurred.
    *
    * @param { number } row The row of the cell to focus.
-   * @param { number } col The column of the cell to focus.
-   * @param { number } tube The tube of the cell to focus.
+   * @param { number | undefined } col The column of the cell to focus.
+   * @param { number | undefined } tube The tube of the cell to focus.
    * @returns { AbstractCell | undefined } The focused cell or `undefined` if the collection is empty.
    */
   public abstract focus(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   /**
@@ -574,13 +577,13 @@ export abstract class AbstractCellCollection {
    * Blur a cell at given position.
    *
    * @param { number } row The row of the cell to blur.
-   * @param { number } col The column of the cell to blur.
-   * @param { number } tube The tube of the cell to blur.
+   * @param { number | undefined } col The column of the cell to blur.
+   * @param { number | undefined } tube The tube of the cell to blur.
    * @returns { AbstractCell | undefined } The blurred cell or `undefined` if the cell was not found.
    */
   public abstract blur(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   /**

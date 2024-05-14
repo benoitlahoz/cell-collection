@@ -12,11 +12,37 @@ export interface HTMLCellOptions {
   pointerEventChannel: keyof HTMLElementEventMap;
 }
 
+/**
+ * Data attributes automatically applied by `HTMLCell` to its underlying `Element` to help finding
+ * which element belongs to each position, starting from the element itself.
+ *
+ *
+ * @property Row The data attributes applied to `HTMLCell`'s element with its row number.
+ * @property Col The data attributes applied to `HTMLCell`'s element with its column number.
+ * @property Tube The data attributes applied to `HTMLCell`'s element with its tube number.
+ * @property Width The data attributes applied to `HTMLCell`'s element with its width in columns.
+ * @property Height The data attributes applied to `HTMLCell`'s element with its height in rows.
+ * @property Depth The data attributes applied to `HTMLCell`'s element with its depth in tubes.
+ *
+ * @example
+ * ```html
+ * <div data-cell-row="0" data-cell-col="0" data-cell-width="1" data-cell-height="1"></div>
+ * ```
+ *
+ * ```typescript
+ * const row = parseInt(element.dataset['cell-row']);
+ * const col = parseInt(element.dataset['cell-col']);
+ *
+ * console.log(collection.has(row, col)); // true
+ * ```
+ */
 export enum HTMLCellDataAttributes {
   Row = 'data-cell-row',
   Col = 'data-cell-col',
+  Tube = 'data-cell-tube',
   Width = 'data-cell-width',
   Height = 'data-cell-height',
+  Depth = 'data-cell-depth',
 }
 
 const addClass =
@@ -34,9 +60,12 @@ const removeClass =
 export class HTMLCell implements AbstractCell {
   public userData: any | undefined;
   /**
-   * Function to add the 'selected', 'focused', ... classes to cell's element.
+   * Function to add the 'selected' class passed in options on creation to cell's element.
    */
   private _addSelectedClass;
+  /**
+   * Function to add the 'focused' class passed in options on creation to cell's element.
+   */
   private _addFocusedClass;
   /**
    * Function to remove a class from cell's element.
@@ -50,7 +79,7 @@ export class HTMLCell implements AbstractCell {
   private _pointerListener: EventListenerOrEventListenerObject | undefined;
 
   /**
-   * Represents a cell of a multidimensional array.
+   * Represents a cell of a multidimensional array linked to an `HTMLElement`.
    *
    * @param { HTMLElement } _element The DOM element for this cell.
    * @param { CellRange } _range The range of the cell in rows and columns (and tubes in case of 3D).
@@ -70,12 +99,20 @@ export class HTMLCell implements AbstractCell {
       `${this._range.index.col}`
     );
     this._element.setAttribute(
+      HTMLCellDataAttributes.Tube,
+      `${this._range.index.tube || 0}`
+    );
+    this._element.setAttribute(
       HTMLCellDataAttributes.Width,
       `${this._range.size.width}`
     );
     this._element.setAttribute(
       HTMLCellDataAttributes.Height,
       `${this._range.size.height}`
+    );
+    this._element.setAttribute(
+      HTMLCellDataAttributes.Depth,
+      `${this._range.size.depth || 1}`
     );
 
     this._addSelectedClass = addClass(this._options.selectedSelector);
@@ -153,7 +190,7 @@ export class HTMLCell implements AbstractCell {
   }
 
   public get col(): number {
-    return this._range.index.col;
+    return this._range.index.col || 0;
   }
 
   public get tube(): number {
@@ -165,7 +202,7 @@ export class HTMLCell implements AbstractCell {
   }
 
   public get height(): number {
-    return this._range.size.height;
+    return this._range.size.height || 1;
   }
 
   public get depth(): number {

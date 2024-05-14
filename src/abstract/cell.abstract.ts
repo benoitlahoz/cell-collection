@@ -1,21 +1,16 @@
 export interface CellIndex {
   row: number;
-  col: number;
+  col?: number;
   tube?: number;
 }
 
 export interface CellSize {
   width: number;
-  height: number;
+  height?: number;
   depth?: number;
 }
 
 export interface CellRange {
-  index: CellIndex;
-  size: CellSize;
-}
-
-export interface CellPixelsRange {
   index: CellIndex;
   size: CellSize;
 }
@@ -84,7 +79,7 @@ export abstract class AbstractCell {
   /**
    * This cell's `column`.
    *
-   * @returns { number } This cell's column.
+   * @returns { number } This cell's column in case of 2D array or 0.
    */
   public abstract col: number;
 
@@ -110,7 +105,7 @@ export abstract class AbstractCell {
   public abstract height: number;
 
   /**
-   * This cell's `depth` in case of 3D array.
+   * This cell's `depth`.
    *
    * @returns { number } This cell's depth.
    */
@@ -124,21 +119,21 @@ export abstract class AbstractCell {
   public abstract range: CellRange;
 
   /**
-   * This cell's upper-left position in the table, with `row` and `col` (and eventually `depth`)).
+   * This cell's upper-left position in the table, with `row`, `col` and `depth`.
    *
    * @returns { CellIndex } The cell's upper-left(-front) position.
    */
   public abstract index: CellIndex;
 
   /**
-   * The cell's size, with `width` and `height` as number of columns and rows (and `depth` as number of tubes).
+   * The cell's size, with `width` and `height` as number of columns and rows, and `depth` as number of tubes.
    *
    * @returns { CellSize } The size of the cell.
    */
   public abstract size: CellSize;
 
   /**
-   * The cell's bounding box with top-left(-front) position and bottom-right(-back) one, as `row` and `column` (and `depth`).
+   * The cell's bounding box with top-left(-front) position and bottom-right-back one, as `row`, `column` and `depth`.
    *
    * @returns { CellBounds } The cell's bounding box.
    */
@@ -175,6 +170,7 @@ export abstract class AbstractCell {
 
     const row: any = inst.row;
     const col: any = inst.col;
+    const tube: any = inst.tube;
 
     const select: unknown = inst.select;
     const unselect: unknown = inst.unselect;
@@ -184,6 +180,7 @@ export abstract class AbstractCell {
     return (
       typeof row === 'number' &&
       typeof col === 'number' &&
+      typeof tube === 'number' &&
       typeof select === 'function' &&
       typeof unselect === 'function' &&
       typeof focus === 'function' &&

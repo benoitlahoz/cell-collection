@@ -24,13 +24,7 @@ export class CellCollection implements AbstractCellCollection {
    * @returns A new `CellCollection`.
    */
   public static fromArray(cells: Array<AbstractCell>): CellCollection {
-    const is3d = cells.some((cell: AbstractCell) => cell.tube > 0);
-
-    if (is3d) {
-      return new CellCollection([[cells]]);
-    } else {
-      return new CellCollection([cells]);
-    }
+    return new CellCollection(cells);
   }
 
   /**
@@ -57,52 +51,62 @@ export class CellCollection implements AbstractCellCollection {
   };
 
   constructor(
-    array: Array<Array<AbstractCell>> | Array<Array<Array<AbstractCell>>> = [[]]
+    array:
+      | Array<AbstractCell>
+      | Array<Array<AbstractCell>>
+      | Array<Array<Array<AbstractCell>>> = []
   ) {
     try {
+      const is1dArray = (array: Array<any>) =>
+        array.every((item: any) => item instanceof AbstractCell);
       const is2dArray = (array: Array<any>) =>
-        array.every((item: any) => Array.isArray(item));
-      const is3dArray = (array: Array<any>) =>
-        array.every((item: any) => is2dArray(item));
+        array.every((item: any) => Array.isArray(item) && is1dArray(item));
+      const is3dArray = (array: Array<any>) => {
+        return (
+          Array.isArray(array) && array.every((item: any) => is2dArray(item))
+        );
+      };
 
-      if (is3dArray(array)) {
-        this._cells = array.flat(3);
-      } else if (is2dArray(array)) {
-        this._cells = array.flat(2);
+      if (Array.isArray(array)) {
+        if (is1dArray(array)) {
+          this._cells = [...(array as Array<AbstractCell>)];
+        } else if (is2dArray(array)) {
+          this._cells = array.flat(2);
+        } else if (is3dArray(array)) {
+          this._cells = array.flat(3);
+        }
+
+        // Public methods.
+        const prototypeMethods: string[] = Object.getOwnPropertyNames(
+          CellCollection.prototype
+        );
+
+        // Instance's variables.
+        const prototypeVariables = Object.getOwnPropertyNames(this);
+
+        const proxy = new Proxy(this, {
+          // A getter to have the iterator working like an array: `myCollection[0]`.
+          get: function (target: any, name: any) {
+            if (name === Symbol.iterator) {
+              // for ... of
+              return target[Symbol.iterator].bind(target);
+            } else if (
+              !prototypeMethods.includes(name) &&
+              !prototypeVariables.includes(name)
+            ) {
+              // If the getter is not an object method or variable,
+              // returns the cell at given index.
+              return target._cells[name];
+            }
+            return target[name];
+          },
+        });
+
+        return proxy;
       }
     } catch (_: unknown) {
-      throw new Error(
-        'Array of `AbstractCell` must be at least 2-dimensional.'
-      );
+      throw new Error('Parameter for `array` is not valid.');
     }
-
-    // Public methods.
-    const prototypeMethods: string[] = Object.getOwnPropertyNames(
-      CellCollection.prototype
-    );
-
-    // Instance's variables.
-    const prototypeVariables = Object.getOwnPropertyNames(this);
-
-    const proxy = new Proxy(this, {
-      // A getter to have the iterator working like an array: `myCollection[0]`.
-      get: function (target: any, name: any) {
-        if (name === Symbol.iterator) {
-          // for ... of
-          return target[Symbol.iterator].bind(target);
-        } else if (
-          !prototypeMethods.includes(name) &&
-          !prototypeVariables.includes(name)
-        ) {
-          // If the getter is not an object method or variable,
-          // returns the cell at given index.
-          return target._cells[name];
-        }
-        return target[name];
-      },
-    });
-
-    return proxy;
   }
 
   /**
@@ -173,12 +177,12 @@ export class CellCollection implements AbstractCellCollection {
         const range = args[0] as CellRange;
         actualRange.index = {
           row: range.index.row,
-          col: range.index.col,
+          col: range.index.col || 0,
           tube: range.index.tube || 0,
         };
         actualRange.size = {
           width: range.size.width,
-          height: range.size.height,
+          height: range.size.height || 1,
           depth: range.size.depth || 1,
         };
       } else if (
@@ -191,14 +195,15 @@ export class CellCollection implements AbstractCellCollection {
 
         actualRange.index = {
           row: Math.min(begin.row, end.row),
-          col: Math.min(begin.col, end.col),
+          col: Math.min(begin.col || 0, end.col || 0),
           tube:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
               ? Math.min(begin.tube, end.tube)
               : 0,
         };
         actualRange.size = {
-          width: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          width:
+            Math.max(begin.col || 0, end.col || 0) - actualRange.index.col! + 1,
           height: Math.max(begin.row, end.row) - actualRange.index.row + 1,
           depth:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
@@ -215,14 +220,15 @@ export class CellCollection implements AbstractCellCollection {
 
         actualRange.index = {
           row: Math.min(begin.row, end.row),
-          col: Math.min(begin.col, end.col),
+          col: Math.min(begin.col || 0, end.col || 0),
           tube:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
               ? Math.min(begin.tube, end.tube)
               : 0,
         };
         actualRange.size = {
-          width: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          width:
+            Math.max(begin.col || 0, end.col || 0) - actualRange.index.col! + 1,
           height: Math.max(begin.row, end.row) - actualRange.index.row + 1,
           depth:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
@@ -240,14 +246,15 @@ export class CellCollection implements AbstractCellCollection {
 
         actualRange.index = {
           row: Math.min(begin.row, end.row),
-          col: Math.min(begin.col, end.col),
+          col: Math.min(begin.col || 0, end.col || 0),
           tube:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
               ? Math.min(begin.tube, end.tube)
               : 0,
         };
         actualRange.size = {
-          width: Math.max(begin.col, end.col) - actualRange.index.col + 1,
+          width:
+            Math.max(begin.col || 0, end.col || 0) - actualRange.index.col! + 1,
           height: Math.max(begin.row, end.row) - actualRange.index.row + 1,
           depth:
             typeof begin.tube !== 'undefined' && typeof end.tube !== 'undefined'
@@ -277,16 +284,16 @@ export class CellCollection implements AbstractCellCollection {
     return this.filter(
       (cell: AbstractCell) =>
         cell.row >= actualRange.index.row &&
-        cell.row < actualRange.index.row + actualRange.size.height &&
-        cell.col >= actualRange.index.col &&
-        cell.col < actualRange.index.col + actualRange.size.width &&
+        cell.row < actualRange.index.row + actualRange.size.height! &&
+        cell.col >= actualRange.index.col! &&
+        cell.col < actualRange.index.col! + actualRange.size.width &&
         cell.tube >= actualRange.index.tube! &&
         cell.tube < actualRange.index.tube! + actualRange.size.depth!
     );
   }
 
   public has(cell?: AbstractCell): boolean;
-  public has(row: number, col: number, tube?: number): boolean;
+  public has(row: number, col?: number, tube?: number): boolean;
   public has(index: CellIndex): boolean;
   public has(
     ...args: (AbstractCell | number | undefined | CellIndex)[]
@@ -297,8 +304,11 @@ export class CellCollection implements AbstractCellCollection {
       return this._cells.includes(args[0]);
     } else if (typeof (args[0] as any).row !== 'undefined') {
       const arg: CellIndex = args[0] as CellIndex;
-      return typeof this.at(arg.row, arg.col, arg.tube || 0) !== 'undefined';
+      return (
+        typeof this.at(arg.row, arg.col || 0, arg.tube || 0) !== 'undefined'
+      );
     } else if (
+      (args.length === 1 && typeof args[0] === 'number') ||
       (args.length === 2 &&
         typeof args[0] === 'number' &&
         typeof args[1] === 'number') ||
@@ -308,18 +318,25 @@ export class CellCollection implements AbstractCellCollection {
         typeof args[2] === 'number')
     ) {
       return (
-        typeof this.at(args[0], args[1], args[2] as number | undefined) !==
-        'undefined'
+        typeof this.at(
+          args[0],
+          args[1] as number | undefined,
+          args[2] as number | undefined
+        ) !== 'undefined'
       );
     }
     return false;
   }
 
-  public at(row: number, col: number, tube?: number): AbstractCell | undefined {
+  public at(
+    row: number,
+    col?: number,
+    tube?: number
+  ): AbstractCell | undefined {
     return this._cells.find(
       (cell: AbstractCell) =>
         cell.row === row &&
-        cell.col === col &&
+        (col ? cell.col === col : cell.col === 0) &&
         (tube ? cell.tube === tube : cell.tube === 0)
     );
   }

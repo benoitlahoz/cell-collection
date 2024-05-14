@@ -1,6 +1,6 @@
-[cell-collection](../modules.md) / dom
+[cell-collection](../modules.md) / DOM
 
-# dom
+# DOM
 
 `cell-collection` DOM package.
 

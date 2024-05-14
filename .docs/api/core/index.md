@@ -1,6 +1,6 @@
-[cell-collection](../modules.md) / core
+[cell-collection](../modules.md) / Core
 
-# core
+# Core
 
 `cell-collection` core package.
 

@@ -2,5 +2,5 @@
 
 ## Modules
 
-- [core](core/index.md)
-- [dom](dom/index.md)
+- [Core](Core/index.md)
+- [DOM](DOM/index.md)

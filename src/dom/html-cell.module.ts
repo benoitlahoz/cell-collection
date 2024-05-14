@@ -82,7 +82,7 @@ export class HTMLCell implements AbstractCell {
    * Represents a cell of a multidimensional array linked to an `HTMLElement`.
    *
    * @param { HTMLElement } _element The DOM element for this cell.
-   * @param { CellRange } _range The range of the cell in rows and columns (and tubes in case of 3D).
+   * @param { CellRange } _range The range of the cell in rows, columns (2D) and tubes (3D).
    * @param  { HTMLCellOptions } _options The options to handle this cell.
    */
   constructor(

@@ -1,4 +1,4 @@
-[cell-collection](../../modules.md) / [core](../index.md) / CellBounds
+[cell-collection](../../modules.md) / [Core](../index.md) / CellBounds
 
 # Interface: CellBounds
 
@@ -10,7 +10,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:19](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell.abstract.ts#L19)
+[abstract/cell.abstract.ts:19](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L19)
 
 ***
 
@@ -20,4 +20,4 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:20](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell.abstract.ts#L20)
+[abstract/cell.abstract.ts:20](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L20)

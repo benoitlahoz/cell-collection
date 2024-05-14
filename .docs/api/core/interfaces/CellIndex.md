@@ -1,4 +1,4 @@
-[cell-collection](../../modules.md) / [core](../index.md) / CellIndex
+[cell-collection](../../modules.md) / [Core](../index.md) / CellIndex
 
 # Interface: CellIndex
 
@@ -10,7 +10,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:3](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell.abstract.ts#L3)
+[abstract/cell.abstract.ts:3](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L3)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:2](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell.abstract.ts#L2)
+[abstract/cell.abstract.ts:2](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L2)
 
 ***
 
@@ -30,4 +30,4 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:4](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell.abstract.ts#L4)
+[abstract/cell.abstract.ts:4](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L4)

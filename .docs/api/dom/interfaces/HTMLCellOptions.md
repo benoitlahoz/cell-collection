@@ -1,4 +1,4 @@
-[cell-collection](../../modules.md) / [dom](../index.md) / HTMLCellOptions
+[cell-collection](../../modules.md) / [DOM](../index.md) / HTMLCellOptions
 
 # Interface: HTMLCellOptions
 
@@ -10,7 +10,7 @@
 
 #### Source
 
-[dom/html-cell.module.ts:11](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/dom/html-cell.module.ts#L11)
+[dom/html-cell.module.ts:11](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/dom/html-cell.module.ts#L11)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Source
 
-[dom/html-cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/dom/html-cell.module.ts#L12)
+[dom/html-cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/dom/html-cell.module.ts#L12)
 
 ***
 
@@ -30,4 +30,4 @@
 
 #### Source
 
-[dom/html-cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/dom/html-cell.module.ts#L10)
+[dom/html-cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/dom/html-cell.module.ts#L10)

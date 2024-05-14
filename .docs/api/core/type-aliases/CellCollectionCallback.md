@@ -1,4 +1,4 @@
-[cell-collection](../../modules.md) / [core](../index.md) / CellCollectionCallback
+[cell-collection](../../modules.md) / [Core](../index.md) / CellCollectionCallback
 
 # Type alias: CellCollectionCallback()
 
@@ -20,4 +20,4 @@ An user callback passed to collection loop methods (e.g. `every`, `some`, ...).
 
 ## Source
 
-[abstract/cell-collection.abstract.ts:17](https://github.com/benoitlahoz/cell-collection/blob/77253b777a20bbc33ec2a602f2d75b581c780e1f/src/abstract/cell-collection.abstract.ts#L17)
+[abstract/cell-collection.abstract.ts:17](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell-collection.abstract.ts#L17)

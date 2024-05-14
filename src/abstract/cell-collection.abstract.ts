@@ -22,6 +22,8 @@ export type CellCollectionCallback = (
 
 /**
  * An abstract class that defines a model for implementing `CellCollection`.
+ *
+ * @abstract This class has no implementation.
  */
 export abstract class AbstractCellCollection {
   /**

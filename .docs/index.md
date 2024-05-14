@@ -10,6 +10,12 @@ hero:
     - theme: brand
       text: Introduction
       link: /api/index.md
+    - theme: alt
+      text: Core API
+      link: /api/Core/index.md
+    - theme: alt
+      text: DOM API
+      link: /api/DOM/index.md
 
 features:
   - title: Feature A

@@ -28,7 +28,7 @@ Bounds with the first cell position and the last cell position.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:68](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L68)
+[abstract/cell-collection.abstract.ts:68](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L68)
 
 ***
 
@@ -40,7 +40,7 @@ If cell collection is applying to DOM, the elements of this collection's cells.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:85](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L85)
+[abstract/cell-collection.abstract.ts:85](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L85)
 
 ***
 
@@ -52,7 +52,7 @@ The first cell of the collection at 0 for row, column and tube.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:36](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L36)
+[abstract/cell-collection.abstract.ts:36](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L36)
 
 ***
 
@@ -64,7 +64,7 @@ Number of the first column.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:48](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L48)
+[abstract/cell-collection.abstract.ts:48](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L48)
 
 ***
 
@@ -76,7 +76,7 @@ Number of the first row.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:44](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L44)
+[abstract/cell-collection.abstract.ts:44](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L44)
 
 ***
 
@@ -88,7 +88,7 @@ Number of the first tube.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:52](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L52)
+[abstract/cell-collection.abstract.ts:52](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L52)
 
 ***
 
@@ -100,7 +100,7 @@ The focused cell.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:81](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L81)
+[abstract/cell-collection.abstract.ts:81](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L81)
 
 ***
 
@@ -112,7 +112,7 @@ The last cell of the collection, at the end position for row, column and tube.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:40](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L40)
+[abstract/cell-collection.abstract.ts:40](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L40)
 
 ***
 
@@ -124,7 +124,7 @@ Number of the last column.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:60](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L60)
+[abstract/cell-collection.abstract.ts:60](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L60)
 
 ***
 
@@ -136,7 +136,7 @@ Number of the last row.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:56](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L56)
+[abstract/cell-collection.abstract.ts:56](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L56)
 
 ***
 
@@ -148,7 +148,7 @@ Number of the last tube.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:64](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L64)
+[abstract/cell-collection.abstract.ts:64](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L64)
 
 ***
 
@@ -160,7 +160,7 @@ The number of cells in the collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:32](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L32)
+[abstract/cell-collection.abstract.ts:32](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L32)
 
 ***
 
@@ -180,7 +180,7 @@ console.log(collection.selected.length) // 1
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:77](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L77)
+[abstract/cell-collection.abstract.ts:77](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L77)
 
 ***
 
@@ -192,7 +192,7 @@ An array of collections with 'lands' of contiguous selecteed cells of this colle
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:89](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L89)
+[abstract/cell-collection.abstract.ts:89](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L89)
 
 ## Methods
 
@@ -220,7 +220,7 @@ for (const cell of myCellCollection) {
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:614](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L614)
+[abstract/cell-collection.abstract.ts:614](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L614)
 
 ***
 
@@ -252,7 +252,7 @@ The cell at given position or `undefined` if it does not exist.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:215](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L215)
+[abstract/cell-collection.abstract.ts:215](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L215)
 
 ***
 
@@ -277,7 +277,7 @@ The cell at next tube, in same row and column, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:329](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L329)
+[abstract/cell-collection.abstract.ts:329](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L329)
 
 ***
 
@@ -297,7 +297,7 @@ The blurred cell or `undefined` if no cell was focused.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:570](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L570)
+[abstract/cell-collection.abstract.ts:570](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L570)
 
 #### blur(cell)
 
@@ -319,7 +319,7 @@ The passed cell.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:577](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L577)
+[abstract/cell-collection.abstract.ts:577](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L577)
 
 #### blur(row, col, tube)
 
@@ -349,7 +349,7 @@ The blurred cell or `undefined` if the cell was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:586](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L586)
+[abstract/cell-collection.abstract.ts:586](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L586)
 
 #### blur(index)
 
@@ -371,7 +371,7 @@ The blurred cell or `undefined` if the cell was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:597](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L597)
+[abstract/cell-collection.abstract.ts:597](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L597)
 
 #### blur(args)
 
@@ -387,7 +387,7 @@ The blurred cell or `undefined` if the cell was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:598](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L598)
+[abstract/cell-collection.abstract.ts:598](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L598)
 
 ***
 
@@ -403,7 +403,7 @@ Clears the collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:377](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L377)
+[abstract/cell-collection.abstract.ts:377](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L377)
 
 ***
 
@@ -427,7 +427,7 @@ A new collection with cells from both.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:420](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L420)
+[abstract/cell-collection.abstract.ts:420](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L420)
 
 ***
 
@@ -452,7 +452,7 @@ that are only present in this collection).
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:440](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L440)
+[abstract/cell-collection.abstract.ts:440](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L440)
 
 ***
 
@@ -468,7 +468,7 @@ Tear-down the collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:94](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L94)
+[abstract/cell-collection.abstract.ts:94](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L94)
 
 ***
 
@@ -493,7 +493,7 @@ The cell at next row, in same column and tube, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:293](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L293)
+[abstract/cell-collection.abstract.ts:293](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L293)
 
 ***
 
@@ -511,7 +511,7 @@ An iterrator on the collection's entries.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:384](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L384)
+[abstract/cell-collection.abstract.ts:384](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L384)
 
 ***
 
@@ -535,7 +535,7 @@ The user provided callback.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:252](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L252)
+[abstract/cell-collection.abstract.ts:252](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L252)
 
 ***
 
@@ -559,7 +559,7 @@ A new collection with the filtered cells.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:346](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L346)
+[abstract/cell-collection.abstract.ts:346](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L346)
 
 ***
 
@@ -583,7 +583,7 @@ A new collection with cells at given column.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:364](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L364)
+[abstract/cell-collection.abstract.ts:364](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L364)
 
 ***
 
@@ -607,7 +607,7 @@ A new collection with cells at given row.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:356](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L356)
+[abstract/cell-collection.abstract.ts:356](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L356)
 
 ***
 
@@ -631,7 +631,7 @@ A new collection with cells at given tube.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:372](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L372)
+[abstract/cell-collection.abstract.ts:372](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L372)
 
 ***
 
@@ -655,7 +655,7 @@ A cell if found or `undefined`.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:282](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L282)
+[abstract/cell-collection.abstract.ts:282](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L282)
 
 ***
 
@@ -675,7 +675,7 @@ The focused cell or `undefined` if the collection is empty.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:531](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L531)
+[abstract/cell-collection.abstract.ts:531](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L531)
 
 #### focus(cell)
 
@@ -697,7 +697,7 @@ The focused cell or `undefined` if the collection is empty.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:538](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L538)
+[abstract/cell-collection.abstract.ts:538](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L538)
 
 #### focus(row, col, tube)
 
@@ -727,7 +727,7 @@ The focused cell or `undefined` if the collection is empty.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:549](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L549)
+[abstract/cell-collection.abstract.ts:549](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L549)
 
 #### focus(index)
 
@@ -749,7 +749,7 @@ The focused cell or `undefined` if the collection is empty.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:560](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L560)
+[abstract/cell-collection.abstract.ts:560](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L560)
 
 #### focus(args)
 
@@ -765,7 +765,7 @@ The focused cell or `undefined` if the collection is empty.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:561](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L561)
+[abstract/cell-collection.abstract.ts:561](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L561)
 
 ***
 
@@ -787,7 +787,7 @@ The function to apply to each cell of this collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:267](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L267)
+[abstract/cell-collection.abstract.ts:267](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L267)
 
 ***
 
@@ -812,7 +812,7 @@ The cell at previous tube, in same row and column, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:338](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L338)
+[abstract/cell-collection.abstract.ts:338](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L338)
 
 ***
 
@@ -836,7 +836,7 @@ Returns `true` if this collection contains the given cell.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:186](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L186)
+[abstract/cell-collection.abstract.ts:186](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L186)
 
 #### has(row, col, tube)
 
@@ -866,7 +866,7 @@ The tube number to test.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:195](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L195)
+[abstract/cell-collection.abstract.ts:195](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L195)
 
 #### has(index)
 
@@ -888,7 +888,7 @@ The index to test.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:202](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L202)
+[abstract/cell-collection.abstract.ts:202](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L202)
 
 #### has(args)
 
@@ -904,7 +904,7 @@ The index to test.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:203](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L203)
+[abstract/cell-collection.abstract.ts:203](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L203)
 
 ***
 
@@ -930,7 +930,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:141](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L141)
+[abstract/cell-collection.abstract.ts:141](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L141)
 
 #### in(bounds)
 
@@ -952,7 +952,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:148](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L148)
+[abstract/cell-collection.abstract.ts:148](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L148)
 
 #### in(begin, end)
 
@@ -978,7 +978,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:156](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L156)
+[abstract/cell-collection.abstract.ts:156](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L156)
 
 #### in(begin, end)
 
@@ -1004,7 +1004,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:167](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L167)
+[abstract/cell-collection.abstract.ts:167](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L167)
 
 #### in(index, size)
 
@@ -1030,7 +1030,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:175](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L175)
+[abstract/cell-collection.abstract.ts:175](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L175)
 
 #### in(args)
 
@@ -1046,7 +1046,7 @@ A subset of this collection in a new collection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:176](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L176)
+[abstract/cell-collection.abstract.ts:176](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L176)
 
 ***
 
@@ -1074,7 +1074,7 @@ The index of the cell.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:133](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L133)
+[abstract/cell-collection.abstract.ts:133](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L133)
 
 ***
 
@@ -1099,7 +1099,7 @@ A new cell collection with intersection of this collection and the provided one
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:429](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L429)
+[abstract/cell-collection.abstract.ts:429](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L429)
 
 ***
 
@@ -1117,7 +1117,7 @@ An iterrator on the collection's keys.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:398](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L398)
+[abstract/cell-collection.abstract.ts:398](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L398)
 
 ***
 
@@ -1142,7 +1142,7 @@ The cell at previous column, in same row and tube, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:320](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L320)
+[abstract/cell-collection.abstract.ts:320](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L320)
 
 ***
 
@@ -1166,7 +1166,7 @@ An array resulting of the function.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:275](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L275)
+[abstract/cell-collection.abstract.ts:275](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L275)
 
 ***
 
@@ -1184,7 +1184,7 @@ The removed cell or undefined if it was not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:124](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L124)
+[abstract/cell-collection.abstract.ts:124](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L124)
 
 ***
 
@@ -1208,7 +1208,7 @@ The new length of the collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:102](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L102)
+[abstract/cell-collection.abstract.ts:102](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L102)
 
 ***
 
@@ -1233,7 +1233,7 @@ The cell at next column, in same row and tube, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:311](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L311)
+[abstract/cell-collection.abstract.ts:311](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L311)
 
 ***
 
@@ -1253,7 +1253,7 @@ A new collection as selection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:456](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L456)
+[abstract/cell-collection.abstract.ts:456](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L456)
 
 #### select(cell)
 
@@ -1275,7 +1275,7 @@ The selected cell or `undefined` if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:463](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L463)
+[abstract/cell-collection.abstract.ts:463](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L463)
 
 #### select(row, col, tube)
 
@@ -1305,7 +1305,7 @@ The selected cell or `undefined` if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:474](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L474)
+[abstract/cell-collection.abstract.ts:474](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L474)
 
 #### select(index)
 
@@ -1327,7 +1327,7 @@ The selected cell or `undefined` if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:485](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L485)
+[abstract/cell-collection.abstract.ts:485](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L485)
 
 #### select(args)
 
@@ -1343,7 +1343,7 @@ The selected cell or `undefined` if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:486](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L486)
+[abstract/cell-collection.abstract.ts:486](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L486)
 
 ***
 
@@ -1361,7 +1361,7 @@ The removed cell or undefined if it was not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:117](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L117)
+[abstract/cell-collection.abstract.ts:117](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L117)
 
 ***
 
@@ -1379,7 +1379,7 @@ A new collection with shuffled cells.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:226](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L226)
+[abstract/cell-collection.abstract.ts:226](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L226)
 
 ***
 
@@ -1403,7 +1403,7 @@ The user provided callback.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:260](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L260)
+[abstract/cell-collection.abstract.ts:260](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L260)
 
 ***
 
@@ -1428,7 +1428,7 @@ A new sorted collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:235](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L235)
+[abstract/cell-collection.abstract.ts:235](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L235)
 
 ***
 
@@ -1446,7 +1446,7 @@ A new sorted collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:244](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L244)
+[abstract/cell-collection.abstract.ts:244](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L244)
 
 ***
 
@@ -1464,7 +1464,7 @@ An array of cells.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:405](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L405)
+[abstract/cell-collection.abstract.ts:405](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L405)
 
 ***
 
@@ -1482,7 +1482,7 @@ A set of cells.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:412](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L412)
+[abstract/cell-collection.abstract.ts:412](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L412)
 
 ***
 
@@ -1502,7 +1502,7 @@ A new collection as selection.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:495](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L495)
+[abstract/cell-collection.abstract.ts:495](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L495)
 
 #### unselect(cell)
 
@@ -1524,7 +1524,7 @@ The unselected cell or undefined if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:502](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L502)
+[abstract/cell-collection.abstract.ts:502](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L502)
 
 #### unselect(row, col, tube)
 
@@ -1554,7 +1554,7 @@ The unselected cell or undefined if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:511](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L511)
+[abstract/cell-collection.abstract.ts:511](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L511)
 
 #### unselect(index)
 
@@ -1574,7 +1574,7 @@ The unselected cell or undefined if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:521](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L521)
+[abstract/cell-collection.abstract.ts:521](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L521)
 
 #### unselect(args)
 
@@ -1590,7 +1590,7 @@ The unselected cell or undefined if it was not found.
 
 ##### Source
 
-[abstract/cell-collection.abstract.ts:522](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L522)
+[abstract/cell-collection.abstract.ts:522](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L522)
 
 ***
 
@@ -1614,7 +1614,7 @@ The new length of the collection.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:110](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L110)
+[abstract/cell-collection.abstract.ts:110](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L110)
 
 ***
 
@@ -1639,7 +1639,7 @@ The cell at previous row, in same column and tube, or `undefined` if not found.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:302](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L302)
+[abstract/cell-collection.abstract.ts:302](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L302)
 
 ***
 
@@ -1657,7 +1657,7 @@ An iterrator on the collection's values.
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:391](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L391)
+[abstract/cell-collection.abstract.ts:391](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L391)
 
 ***
 
@@ -1682,4 +1682,4 @@ that are not present in this collection, and cells of this collection that are n
 
 #### Source
 
-[abstract/cell-collection.abstract.ts:449](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L449)
+[abstract/cell-collection.abstract.ts:449](https://github.com/benoitlahoz/cell-collection/blob/c39a2ad5a7f0fcaf2652a3215b8e2330f8dcfb70/src/abstract/cell-collection.abstract.ts#L449)

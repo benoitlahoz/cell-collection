@@ -10,7 +10,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:10](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L10)
+[abstract/cell.abstract.ts:10](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell.abstract.ts#L10)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:9](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L9)
+[abstract/cell.abstract.ts:9](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell.abstract.ts#L9)
 
 ***
 
@@ -30,4 +30,4 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:8](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell.abstract.ts#L8)
+[abstract/cell.abstract.ts:8](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell.abstract.ts#L8)

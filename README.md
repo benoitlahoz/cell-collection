@@ -22,6 +22,12 @@ When working with HTML tables, one often needs to select one or more 'cells' and
 
 ## Basic Concepts
 
+### Cells
+
+It's up to the user to decide how to create its cells. Basically, they must be created with an initial position at row (height), eventually column (width) and eventually tube (depth).
+Below are some examples on how to create basic cells and cells from HTML elements.
+`cell-collection` package provides two implementations of a cell : `Cell` (which can be used server-side) and `HTMLCell` (which relies on and manage with the DOM).
+
 ### Multidimensional
 
 `CellCollection` accepts 1D to 3D array of cells. Once instantiated it will have internally flatten the array to a single dimension one, and will allow access to the cells by their `row` / `col` / `tube` numbers. It's up to the user to chose to create cells with a specific number at given position slot.

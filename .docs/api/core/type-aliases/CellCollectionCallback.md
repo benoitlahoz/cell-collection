@@ -20,4 +20,4 @@ An user callback passed to collection loop methods (e.g. `every`, `some`, ...).
 
 ## Source
 
-[abstract/cell-collection.abstract.ts:17](https://github.com/benoitlahoz/cell-collection/blob/0946bc3b2fdc5f73e1e8cc4664c5e944d8bb875a/src/abstract/cell-collection.abstract.ts#L17)
+[abstract/cell-collection.abstract.ts:17](https://github.com/benoitlahoz/cell-collection/blob/5791fd20336b799b0bbb60c03a9d6cc62829c651/src/abstract/cell-collection.abstract.ts#L17)

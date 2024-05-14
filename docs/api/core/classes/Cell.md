@@ -26,7 +26,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[core/cell.module.ts:20](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L20)
+[core/cell.module.ts:20](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L20)
 
 ## Properties
 
@@ -36,7 +36,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[core/cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L12)
+[core/cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L12)
 
 ***
 
@@ -48,7 +48,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[core/cell.module.ts:20](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L20)
+[core/cell.module.ts:20](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L20)
 
 ***
 
@@ -58,7 +58,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[core/cell.module.ts:13](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L13)
+[core/cell.module.ts:13](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L13)
 
 ***
 
@@ -74,7 +74,7 @@ User data associated to this cell.
 
 #### Source
 
-[core/cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L10)
+[core/cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L10)
 
 ## Accessors
 
@@ -92,7 +92,7 @@ The cell's bounding box.
 
 #### Source
 
-[core/cell.module.ts:102](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L102)
+[core/cell.module.ts:102](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L102)
 
 ***
 
@@ -110,7 +110,7 @@ This cell's column in case of 2D array or 0.
 
 #### Source
 
-[core/cell.module.ts:61](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L61)
+[core/cell.module.ts:61](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L61)
 
 ***
 
@@ -128,7 +128,7 @@ This cell's depth.
 
 #### Source
 
-[core/cell.module.ts:77](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L77)
+[core/cell.module.ts:77](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L77)
 
 ***
 
@@ -146,7 +146,7 @@ The active status of the cell.
 
 #### Source
 
-[core/cell.module.ts:121](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L121)
+[core/cell.module.ts:121](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L121)
 
 ***
 
@@ -164,7 +164,7 @@ This cell's height.
 
 #### Source
 
-[core/cell.module.ts:73](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L73)
+[core/cell.module.ts:73](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L73)
 
 ***
 
@@ -182,7 +182,7 @@ The cell's upper-left(-front) position.
 
 #### Source
 
-[core/cell.module.ts:94](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L94)
+[core/cell.module.ts:94](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L94)
 
 ***
 
@@ -200,7 +200,7 @@ The selection status of the cell.
 
 #### Source
 
-[core/cell.module.ts:117](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L117)
+[core/cell.module.ts:117](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L117)
 
 ***
 
@@ -218,7 +218,7 @@ This cell's range with `index` (row + column + tube) and `size` (width + height 
 
 #### Source
 
-[core/cell.module.ts:81](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L81)
+[core/cell.module.ts:81](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L81)
 
 ***
 
@@ -234,7 +234,7 @@ This cell's `row`.
 
 #### Source
 
-[core/cell.module.ts:57](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L57)
+[core/cell.module.ts:57](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L57)
 
 ***
 
@@ -252,7 +252,7 @@ The size of the cell.
 
 #### Source
 
-[core/cell.module.ts:98](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L98)
+[core/cell.module.ts:98](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L98)
 
 ***
 
@@ -270,7 +270,7 @@ This cell's tube.
 
 #### Source
 
-[core/cell.module.ts:65](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L65)
+[core/cell.module.ts:65](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L65)
 
 ***
 
@@ -288,7 +288,7 @@ This cell's width.
 
 #### Source
 
-[core/cell.module.ts:69](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L69)
+[core/cell.module.ts:69](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L69)
 
 ## Methods
 
@@ -310,7 +310,7 @@ This cell.
 
 #### Source
 
-[core/cell.module.ts:42](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L42)
+[core/cell.module.ts:42](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L42)
 
 ***
 
@@ -330,7 +330,7 @@ Clean up the cell.
 
 #### Source
 
-[core/cell.module.ts:22](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L22)
+[core/cell.module.ts:22](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L22)
 
 ***
 
@@ -352,7 +352,7 @@ This cell.
 
 #### Source
 
-[core/cell.module.ts:37](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L37)
+[core/cell.module.ts:37](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L37)
 
 ***
 
@@ -374,7 +374,7 @@ This cell.
 
 #### Source
 
-[core/cell.module.ts:47](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L47)
+[core/cell.module.ts:47](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L47)
 
 ***
 
@@ -396,4 +396,4 @@ This cell.
 
 #### Source
 
-[core/cell.module.ts:52](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell.module.ts#L52)
+[core/cell.module.ts:52](https://github.com/benoitlahoz/cell-collection/blob/90d2a7b2a31a3dd80adcbf1669c3269d51abfb08/src/core/cell.module.ts#L52)

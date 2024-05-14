@@ -10,7 +10,7 @@
 
 #### Source
 
-[core/cell-collection.module.ts:14](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/core/cell-collection.module.ts#L14)
+[core/cell-collection.module.ts:14](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell-collection.module.ts#L14)
 
 ***
 
@@ -20,4 +20,4 @@
 
 #### Source
 
-[core/cell-collection.module.ts:15](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/core/cell-collection.module.ts#L15)
+[core/cell-collection.module.ts:15](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/core/cell-collection.module.ts#L15)

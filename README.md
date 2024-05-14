@@ -113,12 +113,6 @@ const nextCol: Cell | undefined = collection.back(cellA);
 
 ## CellCollection
 
-[Documentation](./docs/api/core/classes/CellCollection.md)
-
 ## Cell
 
-[Documentation](./docs/api/core/classes/Cell.md)
-
 ## HTMLCell
-
-[Documentation](./docs/api/core/classes/HTMLCell.md)

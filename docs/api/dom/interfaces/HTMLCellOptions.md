@@ -10,7 +10,7 @@
 
 #### Source
 
-[dom/html-cell.module.ts:11](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L11)
+[dom/html-cell.module.ts:11](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L11)
 
 ***
 
@@ -20,7 +20,7 @@
 
 #### Source
 
-[dom/html-cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L12)
+[dom/html-cell.module.ts:12](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L12)
 
 ***
 
@@ -30,4 +30,4 @@
 
 #### Source
 
-[dom/html-cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L10)
+[dom/html-cell.module.ts:10](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L10)

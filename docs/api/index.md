@@ -6,8 +6,9 @@
 <img src="https://img.shields.io/badge/functions-100%25-brightgreen.svg?style=flat" style="height:100%; margin-right: 0.5rem;"/> 
 <img src="https://img.shields.io/badge/lines-100%25-brightgreen.svg?style=flat" style="height:100%; margin-right: 0.5rem;"/> 
 </div>
+<br />
 
-A collection built on top of javascript `Array` to help with handling 2D or 3D arrays.
+A collection built on top of javascript `Array` to help with handling 1D to 3D arrays.
 
 ## Why and what
 
@@ -112,12 +113,6 @@ const nextCol: Cell | undefined = collection.back(cellA);
 
 ## CellCollection
 
-[Documentation](./docs/api/core/classes/CellCollection.md)
-
 ## Cell
 
-[Documentation](./docs/api/core/classes/Cell.md)
-
 ## HTMLCell
-
-[Documentation](./docs/api/core/classes/HTMLCell.md)

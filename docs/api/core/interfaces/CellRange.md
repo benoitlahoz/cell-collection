@@ -10,7 +10,7 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:14](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/abstract/cell.abstract.ts#L14)
+[abstract/cell.abstract.ts:14](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/abstract/cell.abstract.ts#L14)
 
 ***
 
@@ -20,4 +20,4 @@
 
 #### Source
 
-[abstract/cell.abstract.ts:15](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/abstract/cell.abstract.ts#L15)
+[abstract/cell.abstract.ts:15](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/abstract/cell.abstract.ts#L15)

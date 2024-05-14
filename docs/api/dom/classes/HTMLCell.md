@@ -34,7 +34,7 @@ The options to handle this cell.
 
 #### Source
 
-[dom/html-cell.module.ts:90](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L90)
+[dom/html-cell.module.ts:88](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L88)
 
 ## Properties
 
@@ -54,7 +54,7 @@ Function to add the 'focused' class passed in options on creation to cell's elem
 
 #### Source
 
-[dom/html-cell.module.ts:71](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L71)
+[dom/html-cell.module.ts:69](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L69)
 
 ***
 
@@ -74,7 +74,7 @@ Function to add the 'selected' class passed in options on creation to cell's ele
 
 #### Source
 
-[dom/html-cell.module.ts:66](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L66)
+[dom/html-cell.module.ts:65](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L65)
 
 ***
 
@@ -86,7 +86,7 @@ The DOM element for this cell.
 
 #### Source
 
-[dom/html-cell.module.ts:91](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L91)
+[dom/html-cell.module.ts:89](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L89)
 
 ***
 
@@ -98,7 +98,7 @@ The options to handle this cell.
 
 #### Source
 
-[dom/html-cell.module.ts:93](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L93)
+[dom/html-cell.module.ts:91](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L91)
 
 ***
 
@@ -110,7 +110,7 @@ The pointer listener attached to this cell.
 
 #### Source
 
-[dom/html-cell.module.ts:81](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L81)
+[dom/html-cell.module.ts:79](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L79)
 
 ***
 
@@ -122,7 +122,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[dom/html-cell.module.ts:92](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L92)
+[dom/html-cell.module.ts:90](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L90)
 
 ***
 
@@ -140,7 +140,7 @@ The range of the cell in rows and columns (and tubes in case of 3D).
 
 #### Source
 
-[dom/html-cell.module.ts:76](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L76)
+[dom/html-cell.module.ts:74](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L74)
 
 ***
 
@@ -160,7 +160,7 @@ Function to remove a class from cell's element.
 
 #### Source
 
-[dom/html-cell.module.ts:75](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L75)
+[dom/html-cell.module.ts:73](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L73)
 
 ***
 
@@ -176,7 +176,7 @@ User data associated to this cell.
 
 #### Source
 
-[dom/html-cell.module.ts:61](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L61)
+[dom/html-cell.module.ts:61](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L61)
 
 ## Accessors
 
@@ -184,7 +184,7 @@ User data associated to this cell.
 
 > `get` **boundingBox**(): [`CellBounds`](../../core/interfaces/CellBounds.md)
 
-The cell's bounding box with top-left(-front) position and bottom-right(-back) one, as `row` and `column` (and `depth`).
+The cell's bounding box with top-left(-front) position and bottom-right-back one, as `row`, `column` and `depth`.
 
 #### Returns
 
@@ -194,7 +194,7 @@ The cell's bounding box.
 
 #### Source
 
-[dom/html-cell.module.ts:235](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L235)
+[dom/html-cell.module.ts:233](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L233)
 
 ***
 
@@ -208,11 +208,11 @@ This cell's `column`.
 
 `number`
 
-This cell's column.
+This cell's column in case of 2D array or 0.
 
 #### Source
 
-[dom/html-cell.module.ts:194](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L194)
+[dom/html-cell.module.ts:192](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L192)
 
 ***
 
@@ -220,7 +220,7 @@ This cell's column.
 
 > `get` **depth**(): `number`
 
-This cell's `depth` in case of 3D array.
+This cell's `depth`.
 
 #### Returns
 
@@ -230,7 +230,7 @@ This cell's depth.
 
 #### Source
 
-[dom/html-cell.module.ts:210](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L210)
+[dom/html-cell.module.ts:208](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L208)
 
 ***
 
@@ -246,7 +246,7 @@ Underlying `HTMLElement`of this cell in case it is used client-side.
 
 #### Source
 
-[dom/html-cell.module.ts:186](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L186)
+[dom/html-cell.module.ts:184](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L184)
 
 ***
 
@@ -264,7 +264,7 @@ The active status of the cell.
 
 #### Source
 
-[dom/html-cell.module.ts:254](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L254)
+[dom/html-cell.module.ts:252](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L252)
 
 ***
 
@@ -282,7 +282,7 @@ This cell's height.
 
 #### Source
 
-[dom/html-cell.module.ts:206](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L206)
+[dom/html-cell.module.ts:204](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L204)
 
 ***
 
@@ -290,7 +290,7 @@ This cell's height.
 
 > `get` **index**(): [`CellIndex`](../../core/interfaces/CellIndex.md)
 
-This cell's upper-left position in the table, with `row` and `col` (and eventually `depth`)).
+This cell's upper-left position in the table, with `row`, `col` and `depth`.
 
 #### Returns
 
@@ -300,7 +300,7 @@ The cell's upper-left(-front) position.
 
 #### Source
 
-[dom/html-cell.module.ts:227](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L227)
+[dom/html-cell.module.ts:225](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L225)
 
 ***
 
@@ -318,7 +318,7 @@ The selection status of the cell.
 
 #### Source
 
-[dom/html-cell.module.ts:250](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L250)
+[dom/html-cell.module.ts:248](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L248)
 
 ***
 
@@ -336,7 +336,7 @@ This cell's range with `index` (row + column + tube) and `size` (width + height 
 
 #### Source
 
-[dom/html-cell.module.ts:214](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L214)
+[dom/html-cell.module.ts:212](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L212)
 
 ***
 
@@ -352,7 +352,7 @@ This cell's `row`.
 
 #### Source
 
-[dom/html-cell.module.ts:190](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L190)
+[dom/html-cell.module.ts:188](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L188)
 
 ***
 
@@ -360,7 +360,7 @@ This cell's `row`.
 
 > `get` **size**(): [`CellSize`](../../core/interfaces/CellSize.md)
 
-The cell's size, with `width` and `height` as number of columns and rows (and `depth` as number of tubes).
+The cell's size, with `width` and `height` as number of columns and rows, and `depth` as number of tubes.
 
 #### Returns
 
@@ -370,7 +370,7 @@ The size of the cell.
 
 #### Source
 
-[dom/html-cell.module.ts:231](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L231)
+[dom/html-cell.module.ts:229](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L229)
 
 ***
 
@@ -388,7 +388,7 @@ This cell's tube.
 
 #### Source
 
-[dom/html-cell.module.ts:198](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L198)
+[dom/html-cell.module.ts:196](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L196)
 
 ***
 
@@ -406,7 +406,7 @@ This cell's width.
 
 #### Source
 
-[dom/html-cell.module.ts:202](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L202)
+[dom/html-cell.module.ts:200](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L200)
 
 ## Methods
 
@@ -432,7 +432,7 @@ The listener called when the pointer event is emitted.
 
 #### Source
 
-[dom/html-cell.module.ts:168](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L168)
+[dom/html-cell.module.ts:166](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L166)
 
 ***
 
@@ -454,7 +454,7 @@ This cell.
 
 #### Source
 
-[dom/html-cell.module.ts:153](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L153)
+[dom/html-cell.module.ts:151](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L151)
 
 ***
 
@@ -474,7 +474,7 @@ Clean up the cell.
 
 #### Source
 
-[dom/html-cell.module.ts:127](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L127)
+[dom/html-cell.module.ts:125](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L125)
 
 ***
 
@@ -496,7 +496,7 @@ This cell.
 
 #### Source
 
-[dom/html-cell.module.ts:148](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L148)
+[dom/html-cell.module.ts:146](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L146)
 
 ***
 
@@ -516,7 +516,7 @@ Remove the previously added pointer listener.
 
 #### Source
 
-[dom/html-cell.module.ts:176](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L176)
+[dom/html-cell.module.ts:174](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L174)
 
 ***
 
@@ -538,7 +538,7 @@ This cell.
 
 #### Source
 
-[dom/html-cell.module.ts:158](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L158)
+[dom/html-cell.module.ts:156](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L156)
 
 ***
 
@@ -560,4 +560,4 @@ This cell.
 
 #### Source
 
-[dom/html-cell.module.ts:163](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L163)
+[dom/html-cell.module.ts:161](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L161)

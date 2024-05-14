@@ -28,7 +28,7 @@ The data attributes applied to `HTMLCell`'s element with its column number.
 
 #### Source
 
-[dom/html-cell.module.ts:41](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L41)
+[dom/html-cell.module.ts:41](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L41)
 
 ***
 
@@ -40,7 +40,7 @@ The data attributes applied to `HTMLCell`'s element with its depth in tubes.
 
 #### Source
 
-[dom/html-cell.module.ts:45](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L45)
+[dom/html-cell.module.ts:45](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L45)
 
 ***
 
@@ -52,7 +52,7 @@ The data attributes applied to `HTMLCell`'s element with its height in rows.
 
 #### Source
 
-[dom/html-cell.module.ts:44](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L44)
+[dom/html-cell.module.ts:44](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L44)
 
 ***
 
@@ -64,7 +64,7 @@ The data attributes applied to `HTMLCell`'s element with its row number.
 
 #### Source
 
-[dom/html-cell.module.ts:40](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L40)
+[dom/html-cell.module.ts:40](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L40)
 
 ***
 
@@ -76,7 +76,7 @@ The data attributes applied to `HTMLCell`'s element with its tube number.
 
 #### Source
 
-[dom/html-cell.module.ts:42](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L42)
+[dom/html-cell.module.ts:42](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L42)
 
 ***
 
@@ -88,4 +88,4 @@ The data attributes applied to `HTMLCell`'s element with its width in columns.
 
 #### Source
 
-[dom/html-cell.module.ts:43](https://github.com/benoitlahoz/cell-collection/blob/4d8f426cecceb2df9479d4634b0ab8850eb4c66f/src/dom/html-cell.module.ts#L43)
+[dom/html-cell.module.ts:43](https://github.com/benoitlahoz/cell-collection/blob/3c0533a9495a784f94e91b06da2103bee7d8d9d6/src/dom/html-cell.module.ts#L43)

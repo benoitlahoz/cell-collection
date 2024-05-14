@@ -12,11 +12,13 @@ When working with HTML tables, one often needs to select one or more 'cells' and
 
 `CellCollection` object or its cells are not aimed to handle data by themselves. They are just representations of a topography. However, cells have an `userData` property that can help maintaining everything in one place. Despite that, both cells and their userData are stored by reference to the initial data. Like with a native javascript array, it's up to the user to manage their own objects.
 
-## Coordinate system
+## 'Coordinate' system
 
-`row`s are going from the top to the bottom (0 &darr; Infinity).
-`column`s are going from the left to the right (0 &rarr; Inifinity).
-`tube`s are going from the front to the back (0 &uarr; Inifinity).
+It's up to the user to chose the 'direction' of the cells, but the convention for the collection is that:
+
+`row`s are going from the top to the bottom (index 0 &darr; Infinity).
+`column`s are going from the left to the right (index 0 &rarr; Inifinity).
+`tube`s are going from the front to the back (index 0 &uarr; Infinity).
 
 ## Examples
 

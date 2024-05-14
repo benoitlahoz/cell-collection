@@ -305,6 +305,44 @@ describe('CellCollection', () => {
     collection.unselect();
   });
 
+  test('collection should compute intersection, difference, concat (union) with spread operator or provided method, symmetric difference (xor)', () => {
+    const cell = collection.at(2, 5, 6);
+    const other = collection.at(4, 8, 5);
+    const range = collection.in(cell!, other!);
+
+    const expectedLength = (4 - 2 + 1) * (8 - 5 + 1) * (6 - 5 + 1);
+    const intersection = collection.intersection(range);
+
+    expect(intersection.length).toBe(expectedLength);
+
+    expect(
+      intersection.every((cell: AbstractCell) => collection.has(cell))
+    ).toBeTruthy();
+
+    expect(
+      intersection.every((cell: AbstractCell) => range.has(cell))
+    ).toBeTruthy();
+
+    // Union with spread operator (duplicates are allowed)
+    intersection.push(...range);
+    expect(intersection.length).toBe(expectedLength + range.length);
+
+    let coll = CellCollection.fromArray([...intersection, ...range]);
+    expect(coll.length).toBe(intersection.length + range.length);
+
+    coll = intersection.concat(range);
+    expect(coll.length).toBe(intersection.length + range.length);
+
+    // Difference.
+    coll = collection.difference(range);
+    expect(coll.length).toBe(SIZE * SIZE * SIZE - expectedLength);
+
+    // XOR (this one is like removing 'range' from 'collection', as the whole range is in the collection)
+    expect(range.xor(collection).length).toBe(
+      SIZE * SIZE * SIZE - expectedLength
+    );
+  });
+
   test('collection should compute contiguous selections and return `lands`', () => {
     collection
       .in({
@@ -419,7 +457,9 @@ describe('CellCollection', () => {
 
     // Two cells are now the same.
     shuffled.push(collection[0]);
-    expect(() => shuffled.sortReverse()).toThrowError();
+    // Version 1.0.4 didn't allow duplicates.
+    // expect(() => shuffled.sortReverse()).toThrowError();
+    expect(() => shuffled.sortReverse()).not.toThrowError();
     shuffled.pop();
 
     expect(shuffled.sortReverse()[0].row).toEqual(SIZE - 1);
@@ -428,7 +468,9 @@ describe('CellCollection', () => {
 
     // Two cells are now the same.
     shuffled.push(collection[0]);
-    expect(() => shuffled.sort()).toThrowError();
+    // Version 1.0.4 didn't allow duplicates.
+    // expect(() => shuffled.sort()).toThrowError();
+    expect(() => shuffled.sort()).not.toThrowError();
     shuffled.pop();
 
     shuffled = collection.shuffle();

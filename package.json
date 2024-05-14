@@ -38,10 +38,10 @@
     "test": "vitest",
     "coverage": "vitest run --coverage && istanbul-badges-readme",
     "predocs:dev": "typedoc",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev .docs",
     "predocs:build": "typedoc",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "docs:build": "vitepress build .docs",
+    "docs:preview": "vitepress preview .docs",
     "dev:pack": "npm pack --pack-destination ./packages"
   },
   "files": [

@@ -76,18 +76,18 @@ export class CellCollection implements AbstractCellCollection {
           this._cells = array.flat(3);
         }
 
-        // Public methods.
-        const prototypeMethods: string[] = Object.getOwnPropertyNames(
-          // Version 1.1.1 disallowed subclassing: CellCollection.prototype
-          Object.getPrototypeOf(this)
-        );
-
-        // Instance's variables.
-        const prototypeVariables = Object.getOwnPropertyNames(this);
-
         const proxy = new Proxy(this, {
           // A getter to have the iterator working like an array: `myCollection[0]`.
           get: function (target: any, name: any) {
+            // Public methods.
+            const prototypeMethods: string[] = Object.getOwnPropertyNames(
+              // Version 1.1.2 disallowed subclassing: CellCollection.prototype
+              Object.getPrototypeOf(target)
+            );
+
+            // Instance's variables.
+            const prototypeVariables = Object.getOwnPropertyNames(target);
+
             if (name === Symbol.iterator) {
               // for ... of
               return target[Symbol.iterator].bind(target);

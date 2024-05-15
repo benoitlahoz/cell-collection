@@ -507,11 +507,13 @@ describe('CellCollection', () => {
 
 describe('CellCollection subclass.', () => {
   class CellCollectionSubclass extends CellCollection {
+    private rha: boolean = false;
     constructor() {
       super();
     }
 
     public test(): boolean {
+      console.log(this.rha);
       return true;
     }
   }

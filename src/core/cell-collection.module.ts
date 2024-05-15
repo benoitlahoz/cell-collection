@@ -78,7 +78,8 @@ export class CellCollection implements AbstractCellCollection {
 
         // Public methods.
         const prototypeMethods: string[] = Object.getOwnPropertyNames(
-          CellCollection.prototype
+          // Version 1.1.1 disallowed subclassing: CellCollection.prototype
+          Object.getPrototypeOf(this)
         );
 
         // Instance's variables.
@@ -98,7 +99,11 @@ export class CellCollection implements AbstractCellCollection {
               // returns the cell at given index.
               return target._cells[name];
             }
+
             return target[name];
+          },
+          set: function (target: any, prop: string | symbol, value: any) {
+            return Reflect.set(target, prop, value);
           },
         });
 

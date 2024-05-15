@@ -504,3 +504,20 @@ describe('CellCollection', () => {
     expect(() => collection.clear()).toThrowError();
   });
 });
+
+describe('CellCollection subclass.', () => {
+  class CellCollectionSubclass extends CellCollection {
+    constructor() {
+      super();
+    }
+
+    public test(): boolean {
+      return true;
+    }
+  }
+
+  test('subclass of CellCollection should have its own properties', () => {
+    const coll = new CellCollectionSubclass();
+    expect(coll.test()).toBeTruthy();
+  });
+});

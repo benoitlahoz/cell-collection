@@ -507,19 +507,30 @@ describe('CellCollection', () => {
 
 describe('CellCollection subclass.', () => {
   class CellCollectionSubclass extends CellCollection {
-    private rha: boolean = false;
+    private one: boolean = false;
+    private _two = true;
+
     constructor() {
       super();
     }
 
     public test(): boolean {
-      console.log(this.rha);
       return true;
+    }
+
+    private getIt() {
+      return this.one;
+    }
+
+    private getOther() {
+      return this._two;
     }
   }
 
   test('subclass of CellCollection should have its own properties', () => {
     const coll = new CellCollectionSubclass();
     expect(coll.test()).toBeTruthy();
+    expect(coll['getIt']()).toBeFalsy();
+    expect(coll['getOther']()).toBeTruthy();
   });
 });

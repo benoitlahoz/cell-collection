@@ -81,7 +81,7 @@ export class CellCollection implements AbstractCellCollection {
           get: function (target: any, name: any) {
             // Public methods.
             const prototypeMethods: string[] = Object.getOwnPropertyNames(
-              // Version 1.1.2 disallowed subclassing: CellCollection.prototype
+              // Version 1.1.2 disallowed subclassing: was 'CellCollection.prototype'
               Object.getPrototypeOf(target)
             );
 

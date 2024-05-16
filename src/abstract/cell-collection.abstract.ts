@@ -188,11 +188,11 @@ export abstract class AbstractCellCollection {
    * Returns `true` if this collection contains a cell with given row, column and eventually tube numbers.
    *
    * @param { number } row The row number to test.
-   * @param { number } col The column number to test.
+   * @param { number | undefined } col The column number to test.
    * @param { number | undefined } tube The tube number to test.
    * @returns { boolean } `true` if this collection contains the cell at position.
    */
-  public abstract has(row: number, col: number, tube?: number): boolean;
+  public abstract has(row: number, col?: number, tube?: number): boolean;
   /**
    * Returns `true` if this collection has a cell at given index.
    *

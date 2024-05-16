@@ -557,7 +557,7 @@ export class CellCollection implements AbstractCellCollection {
   public select(cell?: AbstractCell | undefined): AbstractCell | undefined;
   public select(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   public select(index: CellIndex): AbstractCell | undefined;
@@ -583,6 +583,7 @@ export class CellCollection implements AbstractCellCollection {
         return cell.select();
       }
     } else if (
+      (args.length === 1 && typeof args[0] === 'number') ||
       (args.length === 2 &&
         typeof args[0] === 'number' &&
         typeof args[1] === 'number') ||
@@ -591,7 +592,11 @@ export class CellCollection implements AbstractCellCollection {
         typeof args[1] === 'number' &&
         typeof args[2] === 'number')
     ) {
-      const cell = this.at(args[0], args[1], args[2] as number | undefined);
+      const cell = this.at(
+        args[0],
+        args[1] as number | undefined,
+        args[2] as number | undefined
+      );
       if (cell) {
         return cell.select();
       }
@@ -603,7 +608,7 @@ export class CellCollection implements AbstractCellCollection {
   public unselect(cell?: AbstractCell): AbstractCell | undefined;
   public unselect(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   public unselect(index: CellIndex): AbstractCell | undefined;
@@ -627,6 +632,7 @@ export class CellCollection implements AbstractCellCollection {
         return cell.unselect();
       }
     } else if (
+      (args.length === 1 && typeof args[0] === 'number') ||
       (args.length === 2 &&
         typeof args[0] === 'number' &&
         typeof args[1] === 'number') ||
@@ -635,7 +641,11 @@ export class CellCollection implements AbstractCellCollection {
         typeof args[1] === 'number' &&
         typeof args[2] === 'number')
     ) {
-      const cell = this.at(args[0], args[1], args[2] as number | undefined);
+      const cell = this.at(
+        args[0],
+        args[1] as number | undefined,
+        args[2] as number | undefined
+      );
       if (cell) {
         return cell.unselect();
       }
@@ -647,7 +657,7 @@ export class CellCollection implements AbstractCellCollection {
   public focus(cell?: AbstractCell | undefined): AbstractCell | undefined;
   public focus(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   public focus(index: CellIndex): AbstractCell | undefined;
@@ -677,6 +687,7 @@ export class CellCollection implements AbstractCellCollection {
         return cell.focus();
       }
     } else if (
+      (args.length === 1 && typeof args[0] === 'number') ||
       (args.length === 2 &&
         typeof args[0] === 'number' &&
         typeof args[1] === 'number') ||
@@ -685,7 +696,11 @@ export class CellCollection implements AbstractCellCollection {
         typeof args[1] === 'number' &&
         typeof args[2] === 'number')
     ) {
-      const cell = this.at(args[0], args[1], args[2] as number | undefined);
+      const cell = this.at(
+        args[0],
+        args[1] as number | undefined,
+        args[2] as number | undefined
+      );
       if (cell) {
         // Blur all other cells.
         this.blur();
@@ -699,7 +714,7 @@ export class CellCollection implements AbstractCellCollection {
   public blur(cell?: AbstractCell): AbstractCell;
   public blur(
     row: number,
-    col: number,
+    col?: number,
     tube?: number
   ): AbstractCell | undefined;
   public blur(index: CellIndex): AbstractCell | undefined;
@@ -727,6 +742,7 @@ export class CellCollection implements AbstractCellCollection {
         return cell.blur();
       }
     } else if (
+      (args.length === 1 && typeof args[0] === 'number') ||
       (args.length === 2 &&
         typeof args[0] === 'number' &&
         typeof args[1] === 'number') ||
@@ -735,7 +751,11 @@ export class CellCollection implements AbstractCellCollection {
         typeof args[1] === 'number' &&
         typeof args[2] === 'number')
     ) {
-      const cell = this.at(args[0], args[1], args[2] as number | undefined);
+      const cell = this.at(
+        args[0],
+        args[1] as number | undefined,
+        args[2] as number | undefined
+      );
       if (cell) {
         return cell.blur();
       }
